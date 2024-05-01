@@ -1,0 +1,27 @@
+.profile-edit-inputs{
+    display: grid;
+    margin-top: 40px;
+    gap: 20px;
+    label{
+        font-family:system-ui;
+    }
+    .edit-input{
+        height: 30px;
+        margin-top:-20px;
+    }
+    .edit-textArea{ 
+        margin-top: -20px;
+    }
+}
+.save-container{
+    display: flex;
+    justify-content: center;
+
+    .save-btn{
+        margin-top: 20px;
+    }
+}
+
+.close-icon{
+    cursor: pointer;
+}

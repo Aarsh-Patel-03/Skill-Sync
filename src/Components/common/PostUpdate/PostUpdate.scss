@@ -1,0 +1,112 @@
+.post-update-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+     background-image: url(../../../assets/leaf.jpg);
+    background-size: contain;
+
+.user-details{
+    width: 60%;
+    height: 200px;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    border: 1px solid #b7b7b7;
+    border-radius: 7px;
+  
+    text-align: center;
+
+    img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -50px;
+  border: 1px solid #212121;
+  padding: 1px;
+    }
+
+    .name{
+        margin-top: 10px;
+        font-weight: 500;
+        font-family: system-ui;
+    }
+    .headline{
+        font-family: system-ui;
+        margin-top: -15px;
+    }
+
+  
+}
+
+
+    .post-update{
+        width: 60%;
+        height: 120px;
+        background-color: whitesmoke;
+        margin-top: 30px;
+        border: 1px solid #cccbcb;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .post-modal-image{
+
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .open-post-modal{
+            width: 70%;
+            height: 50px;
+            text-align: left;
+            color: rgba(84,84,84,0.89);
+            background-color: whitesmoke;
+            border: 1px solid rgb(125, 122, 122);
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+            padding: 14px;
+            font-family: system-ui;
+            font-weight: 600;
+            margin-left: -50px;
+        }
+        .open-post-modal:hover{
+            background-color: #dcdbdb;
+        }
+    }
+    .posts{
+        width: 60%;
+        padding-bottom: 15px;
+
+    }
+}
+@media screen and (max-width:760px) {
+    .post-update-container{
+        .posts{
+            width: 80%;
+        }
+        .post-update{
+            width: 80%;
+
+            .open-post-modal{
+                width: 70%;
+            }
+        }
+        .user-details{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .post-update-container{
+        .post-update{
+            .post-modal-image{
+                margin-right: 25px;
+            }
+        }
+    }
+}
